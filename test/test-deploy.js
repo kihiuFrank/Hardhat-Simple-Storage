@@ -12,7 +12,6 @@ describe("SimpleStorage", function () {
 
     it("Should start with a favourite number of 0", async function () {
         const currentValue = await simpleStorage.retrieve()
-
         const expectedValue = "0"
         //assert    // expect
         assert.equal(currentValue.toString(), expectedValue)
@@ -32,4 +31,6 @@ describe("SimpleStorage", function () {
 
         assert.equal(updatedValue.toString(), expectedValue)
     })
+
+    // One more test for addperson() needed
 })
